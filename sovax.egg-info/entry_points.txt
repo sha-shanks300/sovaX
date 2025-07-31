@@ -1,0 +1,2 @@
+[console_scripts]
+sovax = sovax.__main__:main

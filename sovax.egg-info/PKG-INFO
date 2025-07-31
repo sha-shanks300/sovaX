@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: sovax
+Version: 1.0
+Summary: Passive Recon Tool
+Author: Shashaank Subramannya
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: pyfiglet
+Requires-Dist: dnspython
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

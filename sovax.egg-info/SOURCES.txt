@@ -1,0 +1,10 @@
+setup.py
+sovax/__init__.py
+sovax/__main__.py
+sovax/sovax.py
+sovax.egg-info/PKG-INFO
+sovax.egg-info/SOURCES.txt
+sovax.egg-info/dependency_links.txt
+sovax.egg-info/entry_points.txt
+sovax.egg-info/requires.txt
+sovax.egg-info/top_level.txt
