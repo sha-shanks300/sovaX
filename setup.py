@@ -1,7 +1,7 @@
 from setuptools import setup
 
 # Read dependencies from requirements.txt
-with open("requirements.txt", "r") as f:
+with open("Requirements.txt", "r") as f:
     requirements = f.read().splitlines()
 
 setup(
