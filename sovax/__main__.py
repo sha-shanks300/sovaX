@@ -1,4 +1,5 @@
-from .sovax import main  # if your logic is in sovax.py
+from .sovax import main
 
 if __name__ == "__main__":
     main()
+

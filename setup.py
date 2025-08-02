@@ -1,20 +1,21 @@
-from setuptools import setup
-
-# Read dependencies from requirements.txt
-with open("Requirements.txt", "r") as f:
-    requirements = f.read().splitlines()
+from setuptools import setup, find_packages
 
 setup(
-    name="sovax",
-    version="1.0",
-    py_modules=["sovax"],  # This tells setuptools you're using a single script, not a package
-    install_requires=requirements,
+    name='sovax',
+    version='0.1',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[
+        'requests',
+        'pyfiglet',
+        'dnspython',
+        'beautifulsoup4',
+        'python-whois'
+    ],
     entry_points={
-        "console_scripts": [
-            "sovax = sovax:main"  # maps to main() in sovax.py
+        'console_scripts': [
+            'sovax = sovax.sovax:main'
         ]
     },
-    python_requires=">=3.6",
-    description="Passive Recon Tool",
-    author="Shashaank Subramannya"
 )
+
