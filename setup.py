@@ -1,17 +1,17 @@
-from setuptools import setup, find_packages
+from setuptools import setup
+
+# Read dependencies from requirements.txt
+with open("requirements.txt", "r") as f:
+    requirements = f.read().splitlines()
 
 setup(
     name="sovax",
     version="1.0",
-    packages=find_packages(),
-    install_requires=[
-        "requests",
-        "pyfiglet",
-        "dnspython"
-    ],
+    py_modules=["sovax"],  # This tells setuptools you're using a single script, not a package
+    install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "sovax = sovax.__main__:main"
+            "sovax = sovax:main"  # maps to main() in sovax.py
         ]
     },
     python_requires=">=3.6",
